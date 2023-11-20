@@ -24,6 +24,6 @@ data = {
    "Última modificación:": fecha,
 }
 df = pd.DataFrame(data)
-#comando to_datetime para convertir el getmtime que nos lo da en segundos convertirlo a fecha
+#comando to_datetime para convertir el getmtime que nos lo da en segundos convertirlo a fecha,.
 df["Última modificación:"] = pd.to_datetime(df["Última modificación:"], unit='s')
 print(df)
